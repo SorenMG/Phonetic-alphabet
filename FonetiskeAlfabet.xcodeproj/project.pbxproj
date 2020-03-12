@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		455D8BA02127109A0041315A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D8B9F2127109A0041315A /* AppDelegate.swift */; };
-		455D8BA22127109A0041315A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D8BA12127109A0041315A /* ViewController.swift */; };
-		455D8BA52127109A0041315A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 455D8BA32127109A0041315A /* Main.storyboard */; };
 		455D8BA72127109B0041315A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 455D8BA62127109B0041315A /* Assets.xcassets */; };
 		455D8BAA2127109B0041315A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 455D8BA82127109B0041315A /* LaunchScreen.storyboard */; };
+		455D8BB22127131E0041315A /* PhoneticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D8BB12127131E0041315A /* PhoneticViewController.swift */; };
+		455D8BB4212719190041315A /* PhoneticCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D8BB3212719190041315A /* PhoneticCharacterModel.swift */; };
+		45F6DD3C21430F3B00B511A8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F6DD3B21430F3B00B511A8 /* TabBarController.swift */; };
+		45F6DD3E21430FF200B511A8 /* CommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F6DD3D21430FF200B511A8 /* CommandViewController.swift */; };
+		45F6DD422143136D00B511A8 /* CommandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F6DD412143136D00B511A8 /* CommandModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		455D8B9C2127109A0041315A /* FonetiskeAlfabet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FonetiskeAlfabet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		455D8B9F2127109A0041315A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		455D8BA12127109A0041315A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		455D8BA42127109A0041315A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		455D8BA62127109B0041315A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		455D8BA92127109B0041315A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		455D8BAB2127109B0041315A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		455D8BB12127131E0041315A /* PhoneticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticViewController.swift; sourceTree = "<group>"; };
+		455D8BB3212719190041315A /* PhoneticCharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticCharacterModel.swift; sourceTree = "<group>"; };
+		45F6DD3B21430F3B00B511A8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		45F6DD3D21430FF200B511A8 /* CommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandViewController.swift; sourceTree = "<group>"; };
+		45F6DD412143136D00B511A8 /* CommandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +61,32 @@
 			isa = PBXGroup;
 			children = (
 				455D8B9F2127109A0041315A /* AppDelegate.swift */,
-				455D8BA12127109A0041315A /* ViewController.swift */,
-				455D8BA32127109A0041315A /* Main.storyboard */,
+				45F6DD402143134A00B511A8 /* ViewControllers */,
+				45F6DD3F2143134600B511A8 /* Models */,
 				455D8BA62127109B0041315A /* Assets.xcassets */,
 				455D8BA82127109B0041315A /* LaunchScreen.storyboard */,
 				455D8BAB2127109B0041315A /* Info.plist */,
 			);
 			path = FonetiskeAlfabet;
+			sourceTree = "<group>";
+		};
+		45F6DD3F2143134600B511A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				455D8BB3212719190041315A /* PhoneticCharacterModel.swift */,
+				45F6DD412143136D00B511A8 /* CommandModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		45F6DD402143134A00B511A8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				45F6DD3B21430F3B00B511A8 /* TabBarController.swift */,
+				45F6DD3D21430FF200B511A8 /* CommandViewController.swift */,
+				455D8BB12127131E0041315A /* PhoneticViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +149,6 @@
 			files = (
 				455D8BAA2127109B0041315A /* LaunchScreen.storyboard in Resources */,
 				455D8BA72127109B0041315A /* Assets.xcassets in Resources */,
-				455D8BA52127109A0041315A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +159,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				455D8BA22127109A0041315A /* ViewController.swift in Sources */,
 				455D8BA02127109A0041315A /* AppDelegate.swift in Sources */,
+				45F6DD3E21430FF200B511A8 /* CommandViewController.swift in Sources */,
+				45F6DD3C21430F3B00B511A8 /* TabBarController.swift in Sources */,
+				455D8BB22127131E0041315A /* PhoneticViewController.swift in Sources */,
+				455D8BB4212719190041315A /* PhoneticCharacterModel.swift in Sources */,
+				45F6DD422143136D00B511A8 /* CommandModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		455D8BA32127109A0041315A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				455D8BA42127109A0041315A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		455D8BA82127109B0041315A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
